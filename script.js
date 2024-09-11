@@ -4,3 +4,9 @@ const getComputerChoice = () => {
   console.log(computerChoice);
 };
 getComputerChoice();
+
+const getHumanChoice = () => {
+  const humanChoice = prompt("Your choice : ");
+  console.log(humanChoice);
+};
+getHumanChoice();
