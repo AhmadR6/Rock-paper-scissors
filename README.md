@@ -1,2 +1,4 @@
 # Rock-paper-scissors
- theOdinProject 
+
+theOdinProject
+This is the rock paper scissors project from theOdinProject
