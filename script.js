@@ -40,7 +40,23 @@ const playRound = (humanChoice, computerChoice) => {
     computerScore += 1;
   }
 };
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+const playGame = () => {
+  let round = 0;
+  while (round < 5) {
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+    round++;
+  }
+  if (humanScore > computerScore) {
+    console.log(
+      `User Wins ! user scores : ${humanScore} , computer scores : ${computerScore}`
+    );
+  } else {
+    console.log(
+      `Computer wins !user scores : ${humanScore} , computer scores : ${computerScore}`
+    );
+  }
+};
+playGame();
